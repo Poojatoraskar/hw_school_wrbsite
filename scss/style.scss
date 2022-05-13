@@ -1,0 +1,1036 @@
+@import './helper/helper-dir';
+
+header {
+    .navbar_top {
+
+        background-color: $dark-bg-main-color;
+        padding: 20px 10px 20px 10px;
+        font-size: 14px;
+
+        @include breakpoint(sm) {
+            padding: 0px;
+        }
+
+        .navbar_top_inner {
+            justify-content: space-between;
+            align-items: center;
+
+            .navbar_top_left {
+                @include breakpoint(sm) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                a {
+                    color: $nav-left-color;
+                    margin-left: 15px;
+                    font-size: 15px;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    @include breakpoint(md) {
+                        margin-top: 10px;
+                    }
+
+                    @include breakpoint(sm) {
+
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            .navbar_top_right {
+                ul {
+                    align-items: center;
+
+                    li {
+                        .btn-signup {
+                            background-color: white;
+                            margin-right: 10px;
+                            margin-bottom: -100px;
+
+                            &:hover {
+                                background-color: $dark-bg-main-color;
+                                color: white;
+                            }
+
+                        }
+
+                        @include breakpoint(sm) {
+                            margin: 8px auto;
+                        }
+                    }
+
+                    @include breakpoint(sm) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation {
+        height: 71px;
+        padding: 10px 0px;
+        background-color: #FBF9F9;
+
+        .navigation-inner {
+            justify-content: space-between;
+
+            .brand {
+                .logotitle {
+                    font-size: 17px;
+                    color: $nav-logotitle-color;
+                    font-family: 'Circular_Std_Book';
+                    font-weight: lighter;
+                    margin-left: 10px;
+
+                    @include breakpoint(lg) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+
+            .burger {
+                display: none;
+                cursor: pointer;
+
+                .burger div {
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    margin: 5px;
+                    transition: all 0.3s ease
+                }
+
+            }
+
+
+            nav {
+                ul {
+                    li {
+                        align-items: center;
+                        margin-right: 15px;
+
+                        a {
+                            font-size: 14px;
+                            color: $nav-logotitle-color;
+                            font-family: 'Circular_Std_Book';
+                            font-weight: lighter;
+                        }
+
+                        form {
+                            select {
+                                border: none;
+                                background-color: #FBF9F9;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    width: 43px;
+                    height: 31px;
+                    border-radius: 35px 35px;
+                    border: 1px solid rgb(214, 214, 214);
+                    background-color: white;
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+
+
+@include breakpoint(md) {
+    .header-for-mobile {
+        display: block;
+        z-index: 1;
+        background-color: #E44240;
+        position: static;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .header-for-mobile button {
+        width: 150px;
+        height: 28px;
+        margin-top: 30px;
+        background-color: white;
+        color: black;
+    }
+
+    .header-for-mobile li a {
+        margin-top: 5px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .bars {
+        display: block;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .nav-list li {
+        display: none;
+    }
+
+}
+
+
+
+
+
+// banner-section start
+.banner-section {
+    background-image: url(../assets/images/banner-bg.png);
+    background-size: 100%;
+    width: 100%;
+    z-index: 1;
+
+    .overlay-black {
+        background: rgba(3, 3, 3, 0.795);
+
+        .banner {
+            padding-top: 100px;
+            justify-content: center;
+
+            @include breakpoint(lg) {
+                padding: 10px;
+                margin: 0px auto;
+            }
+
+            @include breakpoint(smx) {
+                display: block;
+            }
+
+            .banner-info {
+                width: 500px;
+                margin-bottom: 40px;
+
+                @include breakpoint(md) {
+                    width: 356px;
+                    margin-bottom: 0px;
+                }
+
+                @include breakpoint(smx) {
+                    width: 100%;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+                .banner-title-info {
+                    margin: 40px 0px;
+                    font-size: 16px;
+                    color: $banner-title-info-color;
+                    letter-spacing: 0.2px;
+
+                    @include breakpoint(md) {
+                        margin: 10px 0px;
+                    }
+                }
+
+                .enroll-btn {
+                    width: 180px;
+                    height: 45px;
+                    border-radius: 35px;
+                    background-color: $dark-bg-main-color;
+                    color: $main-text-color;
+                    padding: 11px 30px;
+                    transition: 0.8s;
+
+                    &:hover {
+                        background-color: #b31a24;
+                    }
+
+                    @include breakpoint(md) {
+                        padding: 8px 12px;
+                        font-size: 10px;
+                    }
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .banner-img {
+                width: 570px;
+
+                @include breakpoint(lg) {
+                    width: 390px;
+                }
+
+                @include breakpoint(md) {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+
+    }
+
+}
+
+// Superintendent section
+
+.Superintendent {
+    position: relative;
+
+    .Superintendent-inner {
+        margin: 90px auto;
+        width: 865px;
+        padding: 25px;
+
+        @include breakpoint(md) {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .Superintendent-info {
+            .Superintendent-info-title {
+                color: $nav-logotitle-color;
+
+            }
+
+            .Superintendent-info-inner {
+
+                font-size: 16px;
+                line-height: 25px;
+
+                @include breakpoint(md) {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: url("../assets/images/dotgrp.png");
+                position: absolute;
+                right: 200px;
+                top: 0px;
+
+                @include breakpoint(md) {
+                    display: none;
+                }
+            }
+        }
+
+        .Superintendent-img {
+            img {
+                width: 384px;
+                height: 287px;
+                z-index: 1;
+
+                @include breakpoint(md) {
+                    width: 100%;
+                }
+            }
+
+            .Kimmie-btn {
+                width: 284px;
+                height: 54px;
+                border: none;
+                background-color: $light-orange;
+                padding: 16px 96px;
+                margin: -20px auto 0px auto;
+
+                @include breakpoint(md) {
+                    margin: -10px 0px 0px 0px;
+                    width: 100%;
+                    padding: 10px 70px;
+                }
+            }
+
+            &::before {
+                content: url('../assets/images/round.png');
+                position: absolute;
+                left: 180px;
+                top: -50px;
+                width: 114px;
+                height: 114px;
+
+                @include breakpoint(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// mision-vision part
+.mision-vision {
+    background-color: $dark-bg-main-color;
+    position: relative;
+
+    .mision-vision-inner {
+        padding: 30px;
+
+        .misionpart {
+            margin-top: -20px;
+            z-index: 1;
+
+            @include breakpoint(md) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .misionpart-img {
+                img {
+                    width: 384px;
+                    height: 586px;
+
+                    @include breakpoint(smx) {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .visionpart {
+            justify-content: end;
+            margin-top: -140px;
+
+            @include breakpoint(md) {
+                flex-direction: column-reverse;
+                margin-top: 10px;
+                align-items: center;
+            }
+
+            .visionpart-img {
+                img {
+                    width: 438px;
+                    height: 454px;
+
+                    @include breakpoint(smx) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// whyschool part
+.whyschool {
+    margin-top: 150px;
+
+    .whyschool-inner {
+        padding: 10px;
+
+        .whyschool-info {
+            text-align: center;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .whyschool-card {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: 50px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+            .whyschool-card-inner {
+                width: 260px;
+                height: 260px;
+                padding: 20px;
+                text-align: justify;
+                box-shadow: 0 0 20px 20px #EDEDED;
+                margin-top: 30px;
+                border-radius: 15px;
+
+                &:hover {
+                    background-color: $dark-bg-main-color;
+                    color: white;
+                }
+
+                h4 {
+                    margin: 20px 0px;
+                }
+
+                p {
+                    line-height: 25px;
+                }
+
+                .cardone-brown {
+                    background-color: $dark-bg-main-color;
+
+                }
+
+                .cardone-lightred {
+                    background-color: $light-pink;
+                }
+
+                .cardone-lightgreen {
+                    background-color: $light-green;
+                }
+
+                .cardone-lightblue {
+                    background-color: $light-blue;
+                }
+
+                .cardone-orange {
+                    background-color: $light-orange;
+                }
+            }
+        }
+    }
+}
+
+// schooltype  part
+.schooltype {
+    height: 770px;
+    border-radius: 55%;
+    width: 100%;
+    margin-top: 100px;
+    background-image: linear-gradient(#FAF3F3, #F6E4E4);
+    padding-top: 50px;
+
+    @include breakpoint(smx) {
+        border-radius: 40px;
+    }
+
+    .schooltype-inner {
+        .schooltype-info {
+            text-align: center;
+            margin: 50px auto;
+
+            h2 {
+                margin: 30px auto;
+            }
+        }
+
+        .schooltype-slider {
+            margin-top: 85px;
+
+            .schooltype-owl-carousel {
+
+
+                .schooltype-slider-item {
+                    width: 266px;
+                    height: 237px;
+                    border-radius: 15px;
+                    box-shadow: 0 0 30px 0px #E5E1E9;
+
+                    @include breakpoint(smx) {
+                        width: 100%;
+                    }
+
+                    p {
+                        background-color: $main-text-color;
+                        padding: 10px 20px;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: $dark-bg-main-color;
+                            color: $main-text-color;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .owl-carousel button.owl-dot {
+            visibility: hidden;
+        }
+    }
+}
+
+// testimonial part
+.testimonial {
+    margin-bottom: 126px;
+
+    @include breakpoint(md) {
+        margin-bottom: 30px;
+    }
+
+    .testimonial-inner {
+        .testimonial-info {
+            text-align: center;
+            margin: 50px auto;
+
+            h2 {
+                margin: 30px auto;
+
+            }
+        }
+
+        .testimonial-slider {
+            padding: 0px;
+
+            .testimonial-slider-item {
+                width: 350px;
+                height: 240px;
+                border-radius: 25px;
+                box-shadow: 10px 10px 25px 12px #F4F4F4;
+                margin: 15px;
+                padding: 15px;
+
+                @include breakpoint(md) {
+                    width: 280px;
+                }
+
+                @include breakpoint(smx) {
+                    width: 100%;
+                }
+
+                ul {
+                    .top-img {
+                        width: 44px;
+                        height: 44px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    li {
+                        margin-left: 20px;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                    padding: 20px;
+                    text-align: left;
+                    line-height: 20px;
+                }
+
+                &:hover {
+                    background-color: $dark-bg-main-color;
+                    color: $main-text-color;
+                }
+            }
+
+            .owl-carousel .owl-nav button.owl-next,
+            .owl-carousel .owl-nav button.owl-prev {
+                display: none;
+            }
+
+            .owl-theme .owl-dots {
+                margin: 0px auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// info-links part
+.info-links {
+    position: relative;
+    background-color: #F6E4E4;
+
+    .info-links-inner {
+        margin: 0px auto;
+        width: 900px;
+        padding: 40px 0px 40px 0px;
+
+        @include breakpoint(md) {
+            width: 700px;
+        }
+
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            color: $dark-bg-main-color;
+            margin: 40px auto;
+        }
+
+        .bottom-info {
+            margin-left: 40px;
+
+            @include breakpoint(sm) {
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .info-links-inner-img {
+                width: 110px;
+                height: 110px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .info-links-inner-link {
+                margin-left: 20px;
+
+                ul {
+                    list-style: disc inside;
+
+                    li {
+
+                        a {
+                            margin-top: 10px;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+// Dolar part
+.Dolar {
+    margin-top: 100px;
+
+    .dolor-inner {
+        .dolor-inner-info {
+            text-align: center;
+
+            h2 {
+                margin: 20px 0px;
+            }
+        }
+
+        .dolor-inner-card {
+            justify-content: center;
+            margin-top: 50px;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            row-gap: 50px;
+
+            .dolocard {
+                width: 320px;
+                height: 370px;
+                text-align: center;
+                box-shadow: 0px 10px 15px 20px #F4F4F4;
+                border-radius: 45px 0px 45px 0px;
+                padding: 20px;
+
+                &:hover {
+                    background-color: $dark-bg-main-color;
+                    color: white;
+                }
+
+                .doloar-gap {
+                    width: 130px;
+                    height: 130px;
+                    border: 1px solid black;
+                    margin: 00px auto;
+                    border-radius: 65px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    margin: 35px 0px;
+                }
+
+                p {
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px;
+    color: $main-text-color;
+    background-color: $dark-bg-main-color;
+
+    .footer-inner {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        @include breakpoint(md) {
+
+            justify-content: space-between;
+        }
+
+        h3,
+        h4,
+        h5 {
+            font-size: 17px;
+            margin: 20px 0px;
+            margin-left: 10px;
+        }
+
+        ul {
+
+            li {
+                margin-top: 20px;
+                margin-left: 10px;
+
+                a {
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #c0bbbb;
+                    }
+
+                }
+            }
+        }
+
+        .medialinks {
+
+            padding-left: 10px;
+
+            a {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+// .mobileview {
+//     * {
+//         margin: 0px;
+//         padding: 0px;
+//         box-sizing: border-box;
+//     }
+
+//     nav {
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         min-height: 10vh;
+//         background-color: #5d4954;
+//         font-family: 'Poppins', sans-serif;
+//     }
+
+//     .logo {
+//         color: #fff;
+//         text-transform: uppercase;
+//         letter-spacing: 5px;
+//         font-size: 22px;
+//     }
+
+//     .nav-links {
+//         display: flex;
+//         justify-content: space-around;
+//         width: 35%;
+//     }
+
+//     .nav-links li {
+//         list-style: none;
+
+//     }
+
+//     .nav-links a {
+//         color: rgb(226, 226, 226);
+//         text-decoration: none;
+//         letter-spacing: 3px;
+//         font-weight: bold;
+//         font-size: 14px;
+//     }
+
+//     .burger {
+//         display: none;
+//         cursor: pointer;
+//     }
+
+//     .burger div {
+//         width: 25px;
+//         height: 3px;
+//         background-color: #fff;
+//         margin: 5px;
+//         transition: all 0.3s ease
+//     }
+
+//     @media screen and (max-width:1024px) {
+//         .nav-links {
+//             width: 60%;
+//         }
+//     }
+
+//     @media screen and (max-width:768px) {
+//         body {
+//             overflow-x: hidden;
+//         }
+
+//         .nav-links {
+//             position: absolute;
+//             right: 0px;
+//             height: 92vh;
+//             top: 8vh;
+//             background-color: #5d4954;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             width: 50%;
+//             transform: translateX(100%);
+//             transition: transform 0.5s ease-in;
+//         }
+
+//         .nav-links li {
+//             opacity: 0;
+//         }
+
+//         .burger {
+//             display: block;
+//         }
+//     }
+
+//     .nav-active {
+//         transform: translateX(0%);
+//     }
+
+//     @keyframes navLinkFade {
+//         from {
+//             opacity: 0;
+//             transform: translateX(50px);
+//         }
+
+//         to {
+//             opacity: 1;
+//             transform: translateX(0px);
+//         }
+//     }
+
+//     .toggle .line1 {
+//         transform: rotate(-40deg) translate(-5px, 6px);
+//     }
+
+//     .toggle .line2 {
+//         transform: rotate(90deg) translate(0px, 0px);
+//     }
+
+//     .toggle .line3 {
+//         transform: rotate(35deg) translate(-5px, -6px);
+//     }
+// }
+.Dolar {
+    @keyframes progress {
+        0% {
+            stroke-dasharray: 0 100;
+        }
+    }
+
+    .circle-svg {
+        display: block;
+        margin: 10px auto;
+        max-height: 100px;
+    }
+
+    .circle-svg text {
+        text-align: center;
+        color: black;
+        font-size: 10px
+    }
+
+    .circle-svg path.percent {
+        stroke: #6f6fff;
+        fill: none;
+        stroke-width: 2.8;
+        stroke-linecap: round;
+        animation: progress 1s ease-out forwards;
+    }
+
+    .circle-svg path.around {
+        stroke: #c4c4c4;
+        fill: none;
+        stroke-width: 2.8;
+    }
+
+}
+
+.search-modal {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    width: 100%;
+    height: 45px;
+    z-index: 999;
+    padding: 0px 10px;
+}
+
+.search-modal .search-input {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: 3px 60px 3px 5px;
+    border: 1px solid rgb(202, 200, 200);
+    outline: none;
+    border-radius: 15px;
+    height: 45px;
+
+}
+
+.search-modal .search-input:focus {
+    border: 2px solid rgb(10, 199, 104);
+}
+
+.search-modal button {
+    display: none;
+}
+
+.search-modal .search-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: 700;
+}
+
+.search-close i,
+.search-modal button i {
+    font-size: 20px;
+}
+
+.owl-nav {
+    color: #b31a24;
+    text-align: center;
+    font-size: 30px;
+    //   i{
+    //     background-color: #b31a24;
+    //    position: absolute;
+    //    top: -50px;
+    //    font-size:30px;
+    //    margin-left: 10px;
+    //   }
+
+}

@@ -1,0 +1,241 @@
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    // background: #F5F5F5;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Circular_Std_Book';
+    font-weight: 400;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1274px;
+    @include breakpoint(lg){
+        width:992px;
+    }
+    @include breakpoint(md){
+        width: 716px;
+    }
+    @include breakpoint(sm) {
+        width:100%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+// img {
+//     max-width: 100%;
+// }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+P{
+    font-size: 16px;
+    @include breakpoint(smx){
+        font-size:13px;
+    }
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-weight-normal {
+    font-weight: lighter;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.center-align {
+    justify-content: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.btn-signup,
+.selectlanguage {
+    padding: 5px 18px;
+    border-radius: 35px;
+    border: none;
+    @include breakpoint(sm){
+        font-size: 8px;
+    }
+}
+
+.align-items-center {
+    align-items: center;
+}
+.justify-content{
+    justify-content: center;
+}
+.d-block {
+    display: block;
+}
+
+.banner-title {
+    font-size:49px;
+    font-weight: 400;
+    color: $main-text-color;
+    @include breakpoint(lg){
+        font-size:32px;  
+    }
+    @include breakpoint(smx){
+        font-size:28px;
+    }
+}
+
+.grid-1-4 {
+    width: 100%;
+
+    @include breakpoint(sm) {
+        width: 50%;
+    }
+
+    @include breakpoint(lg) {
+        width: 25%;
+    }
+}
+
+.grid-1-3 {
+    width: 100%;
+
+    @include breakpoint(sm) {
+        width: 33.3%;
+    }
+}
+
+.grid-1-2 {
+    width: 100%;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: orange;
+}
+.text-white{
+    color: $main-text-color;
+}
+.text-black{
+    color: black;
+}
+.banner-dots {
+    width: 50px;
+    margin: -20px auto 0px auto;
+}
+.misionpart,.visionpart{
+    .mivi-info{
+        width: 450px;
+        margin-left: 10px;
+        @include breakpoint(smx){
+            width: 100%;
+        }
+    }
+    h3{
+        // font-size: 34px;  
+        margin-top:30px; 
+    }
+    p{
+        // font-size: 16px;
+        line-height:25px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    a{
+       width: 163px;
+       cursor: pointer;
+       height:45px;
+       background: $main-text-color;
+       border-radius: 35px;
+        transition: 00.8s;
+        padding: 10px 23px;
+      
+       &:hover{
+           background-color: rgb(184, 213, 238);
+       }
+    }
+}
+
+
+.whyschool-card-img{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    img{
+        width:25px;
+        height:25px;
+    }
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+    text-align: center;
+}
+
+.second-title{
+    font-size: 38px;
+    font-weight: 400;
+
+    @include breakpoint(md){
+        font-size:24px;  
+    }
+    @include breakpoint(xs){
+        font-size:20px;  
+    }
+
+}
+
+
+.bars {
+    display: none;
+}
+
+.header-for-mobile-app {
+    display: none;
+}

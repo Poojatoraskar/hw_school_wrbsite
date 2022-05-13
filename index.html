@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <!----owl links----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -awesome link -->
+
+    <!----font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Roboto font style -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Montserrat:wght@600;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW SCHOOL DISTRICT</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar_top">
+            <div class="container">
+                <div class="navbar_top_inner d-flex ">
+                    <div class="navbar_top_left d-flex">
+                        <a href="" class="font-weight-normal hotline d-block"><i class="fa-solid fa-phone"></i>Support
+                            Hotline :
+                            586-217-2163</a>
+                        <a href="" class="font-weight-normal supportemailid d-block"><i
+                                class="fa-solid fa-envelope"></i>vctung@outlook.com</a>
+                    </div>
+                    <div class="navbar_top_right">
+                        <ul class="d-flex ">
+                            <li> <a href="" class="btn-signup text-black font-weight-normal">Sign up</a></li>
+                            <li>
+                                <form action="#">
+                                    <select name="cars" id="cars" class="selectlanguage">
+                                        <!-- <optgroup label="Swedish Cars"> -->
+                                        <option value="volvo">Select Language</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+                                        <!-- <optgroup label="German Cars"> -->
+                                        <option value="mercedes">Hindi</option>
+                                        <option value="audi">Audi</option>
+                                        <!-- </optgroup> -->
+                                    </select>
+
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="container">
+                <div class="navigation-inner d-flex ">
+                    <div class="brand ">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="./assets/images/logo.png" alt="Logo" width="45px" height="45px">
+                            <p class="logotitle">HW SCHOOL DISTRICT</p>
+                        </a>
+                    </div>
+
+                    <nav class="d-flex align-items-center">
+                        <div class="nav-mobile">
+                            <a id="nav-toggle" href="#"><span></span></a>
+                        </div>
+                        <ul class="nav-list d-flex align-items-center nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <form action="#">
+                                    <select name="Schools" id="Schools">
+                                        <option value="volvo">Schools</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+                                    </select>
+
+                                </form>
+                            </li>
+                            <li>
+                                <form action="#">
+                                    <select name="District Info" id="District_Info">
+                                        <option value="volvo">District Info</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Nutrition</a></li>
+                            <li>
+                                <form action="#">
+                                    <select name="Education Services" id="Education_Services">
+
+                                        <option value="volvo">Education Services</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+
+
+                                    </select>
+
+                                </form>
+                            </li>
+                            <li>
+                                <form action="#">
+
+                                    <select name="Athletics" id="Athletics">
+
+                                        <option value="volvo">Athletics</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+
+                                    </select>
+
+                                </form>
+                            </li>
+
+                            <li>
+                                <form action="#">
+
+                                    <select name="More" id="More">
+                                        <option value="volvo">More</option>
+                                        <option value="saab">Marathi</option>
+                                        <option value="volvo">English</option>
+                                        </optgroup>
+
+                                    </select>
+
+                                </form>
+                            </li>
+                        </ul>
+                        <button id="search-icon" onclick="searchBarOpen()"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+
+                        <form class="search-modal" id="search-modal">
+                            <input type="search" class="search-input" />
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <a href="javascript:void(0);" class="search-close" onclick="searchBarClose()"><i
+                                    class="fa-solid fa-square-xmark"></i></a>
+                        </form>
+                        <div class="bars">
+
+                            <i class="fa fa-bars " aria-hidden="true" onclick="toggleNavBar()"></i>
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="header-for-mobile-app sidenav" id="headerRightformobile">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <form action="#">
+                                <select name="Schools" id="Schools">
+                                    <option value="volvo">Schools</option>
+                                    <option value="saab">Marathi</option>
+                                    <option value="volvo">English</option>
+                                    </optgroup>
+                                </select>
+
+                            </form>
+                        </li>
+                        <li>
+                            <form action="#">
+                                <select name="District Info" id="District_Info">
+                                    <option value="volvo">District Info</option>
+                                    <option value="saab">Marathi</option>
+                                    <option value="volvo">English</option>
+                                    </optgroup>
+                                </select>
+                            </form>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li>
+                            <form action="#">
+                                <select name="Education Services" id="Education_Services">
+
+                                    <option value="volvo">Education Services</option>
+                                    <option value="saab">Marathi</option>
+                                    <option value="volvo">English</option>
+                                    </optgroup>
+
+
+                                </select>
+
+                            </form>
+                        </li>
+                        <li>
+                            <form action="#">
+
+                                <select name="Athletics" id="Athletics">
+
+                                    <option value="volvo">Athletics</option>
+                                    <option value="saab">Marathi</option>
+                                    <option value="volvo">English</option>
+                                    </optgroup>
+
+                                </select>
+
+                            </form>
+                        </li>
+
+                        <li>
+                            <form action="#">
+
+                                <select name="More" id="More">
+                                    <option value="volvo">More</option>
+                                    <option value="saab">Marathi</option>
+                                    <option value="volvo">English</option>
+                                    </optgroup>
+
+                                </select>
+
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Ends -->
+    </header>
+    <!-- banner section -->
+    <section class="banner-slider">
+        <div class="banner-section  mySlides">
+            <div class="overlay-black">
+                <div class="container">
+                    <div class="banner d-flex ">
+                        <div class="banner-info ">
+                            <h1 class="banner-title">
+                                We are determined to
+                                <span class="d-block"> achieve the highest </span>
+                                <span class="d-block">standards</span>
+                            </h1>
+                            <p class="banner-title-info">
+                                We are always availed to consult on taking your higher education to the next level so
+                                you
+                                can stay competitive in the global world.
+                            </p>
+                            <a href="" class="enroll-btn">Enroll Now<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="banner-img ">
+                            <img src="./assets/images/banner1.png" alt="banner img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-section  mySlides">
+            <div class="overlay-black">
+                <div class="container">
+                    <div class="banner d-flex">
+                        <div class="banner-info ">
+                            <h1 class="banner-title">
+                                We are determined to
+                                <span class="d-block"> achieve the highest </span>
+                                <span class="d-block">standards</span>
+                            </h1>
+                            <p class="banner-title-info">
+                                We are always availed to consult on taking your higher education to the next level so
+                                you
+                                can stay competitive in the global world.
+                            </p>
+                            <a href="" class="enroll-btn">Enroll Now<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="banner-img ">
+                            <img src="./assets/images/banner1.png" alt="banner img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-section  mySlides">
+            <div class="overlay-black">
+                <div class="container">
+                    <div class="banner d-flex ">
+                        <div class="banner-info ">
+                            <h1 class="banner-title">
+                                We are determined to
+                                <span class="d-block"> achieve the highest </span>
+                                <span class="d-block">standards</span>
+                            </h1>
+                            <p class="banner-title-info">
+                                We are always availed to consult on taking your higher education to the next level so
+                                you
+                                can stay competitive in the global world.
+                            </p>
+                            <a href="" class="enroll-btn">Enroll Now<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="banner-img ">
+                            <img src="./assets/images/banner1.png" alt="banner img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Superintendent section -->
+    <section class="Superintendent">
+        <div class="container">
+            <div class="Superintendent-inner d-flex">
+
+                <div class="grid-1-2 Superintendent-img">
+
+                    <div>
+                        <img src="./assets/images/businessman-office.png" alt="businessman-office">
+                    </div>
+                    <div> <button class="Kimmie-btn d-block text-white">Kimmie Vo </button></div>
+                </div>
+                <div class="grid-1-2 Superintendent-info">
+                    <h2 class="Superintendent-info-title second-title"> Superintendent Image
+                        <span class="d-flex">& Name</span>
+                    </h2>
+                    <p class="Superintendent-info-inner">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mision-vision section -->
+    <section class="mision-vision">
+        <div class="container">
+            <div class="mision-vision-inner">
+                <div class="misionpart d-flex  ">
+                    <div class="misionpart-img ">
+                        <img src="./assets/images/mision1.png" alt="">
+                    </div>
+                    <div class=" misionpart-info mivi-info ">
+                        <h3 class="text-white second-title">Mission</h3>
+                        <p class="text-white">
+                            The Mission of Harper Woods School District is to provide a nurturing educational experience
+                            with a challenging academic curriculum aligned to every classroom that will challenge and
+                            prepare students for career, college and entrepreneurship readiness.
+                        </p>
+                        <a href="" class="text-black">Read more</a>
+                    </div>
+                </div>
+                <div class="visionpart d-flex">
+                    <div class="visionpart-info mivi-info">
+
+                        <h3 class="text-white second-title">Vision</h3>
+                        <p class="text-white">
+                            The Mission of Harper Woods School District is to provide a nurturing educational experience
+                            with a challenging academic curriculum aligned to every classroom that will challenge and
+                            prepare students for career, college and entrepreneurship readiness.
+                        </p>
+                        <a href="" class="text-black">Read more</a>
+                    </div>
+                    <div class="visionpart-img">
+                        <img src="./assets/images/vision.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- whyschool section -->
+    <section class="whyschool">
+        <div class="container">
+            <div class="whyschool-inner">
+                <div class="whyschool-info">
+                    <h2 class="second-title">Why HW Schools</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <br>labore et dolore magna aliqua!</span>
+                    </p>
+                </div>
+                <div class="whyschool-card">
+                    <div class="whyschool-card-inner ">
+                        <div class="whyschool-card-img cardone-brown">
+                            <img src="./assets/images/target.png" alt="">
+                        </div>
+                        <h4>Lorem Ipsum Dolar</h4>
+                        <p>
+                            Maiores voluptas laboriosam non
+                            dolorum perferendis fuga repellat
+                            aut. Blanditiis quos in minus.
+                        </p>
+                    </div>
+                    <div class="whyschool-card-inner ">
+                        <div class="whyschool-card-img cardone-lightred">
+                            <img src="./assets/images/book.png" alt="">
+                        </div>
+                        <h4>Lorem Ipsum Dolar</h4>
+                        <p>
+                            Maiores voluptas laboriosam non
+                            dolorum perferendis fuga repellat
+                            aut. Blanditiis quos in minus.
+                        </p>
+                    </div>
+                    <div class="whyschool-card-inner">
+                        <div class="whyschool-card-img  cardone-lightgreen">
+                            <img src="./assets/images/trackmass.png" alt="">
+                        </div>
+                        <h4>Lorem Ipsum Dolar</h4>
+                        <p>
+                            Maiores voluptas laboriosam non
+                            dolorum perferendis fuga repellat
+                            aut. Blanditiis quos in minus.
+                        </p>
+                    </div>
+                    <div class="whyschool-card-inner">
+                        <div class="whyschool-card-img cardone-lightblue">
+                            <img src="./assets/images/home.png" alt="">
+                        </div>
+                        <h4>Lorem Ipsum Dolar</h4>
+                        <p>
+                            Maiores voluptas laboriosam non
+                            dolorum perferendis fuga repellat
+                            aut. Blanditiis quos in minus.
+                        </p>
+                    </div>
+                    <div class="whyschool-card-inner">
+                        <div class="whyschool-card-img cardone-orange">
+                            <img src="./assets/images/medal.png" alt="">
+                        </div>
+                        <h4>Lorem Ipsum Dolar</h4>
+                        <p>
+                            Maiores voluptas laboriosam non
+                            dolorum perferendis fuga repellat
+                            aut. Blanditiis quos in minus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- schooltype section -->
+    <section class="schooltype">
+        <div class="container">
+            <div class="schooltype-inner">
+                <div class="schooltype-info">
+                    <h2 class="second-title">Lorem Ipsum Dolar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <br>labore et dolore magna aliqua!</span>
+                    </p>
+                </div>
+                <div class="schooltype-slider">
+
+                    <div class=" schooltype-owl-carousel  owl-carousel owl-theme d-flex">
+                        <div class="item  schooltype-slider-item">
+                            <img src="./assets/images/Beacon_Elementary_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+                        <div class="item schooltype-slider-item">
+                            <img src="./assets/images/Tyrone_Elementary_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+                        <div class="item schooltype-slider-item">
+                            <img src="./assets/images/Middle_School_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+                        <div class="item schooltype-slider-item">
+                            <img src="./assets/images/High_Schoo_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+                        <div class="item schooltype-slider-item">
+                            <img src="./assets/images/Middle_School_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+
+                        <div class="item schooltype-slider-item">
+                            <img src="./assets/images/Tyrone_Elementary_img.png" alt="">
+                            <P>Beacon Elementary </P>
+                        </div>
+
+                    </div>
+                    <!-- <div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button><button type="button" role="presentation" class="owl-next">
+                        <i class="fa-solid fa-arrow-right-long"></i></button></div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-inner">
+                <div class="testimonial-info">
+                    <h2 class="second-title">Testimonial</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <br>labore et dolore magna aliqua!</span>
+                    </p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class=" testimonial-owl-carousel  owl-carousel owl-theme">
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+                        <div class="item  testimonial-slider-item">
+                            <ul class="d-flex">
+                                <li class="top-img">
+                                    <img src="./assets/images/girl_with_book.png" alt="">
+                                </li>
+                                <li>
+                                    <h4>Harrison Phillips</h4>
+                                    <span>Lorem ipsum</span>
+                                </li>
+                            </ul>
+                            <p> Nisi cumque in necessitatibus molestiae
+                                eaque excepturi ab. Laboriosam ipsam
+                                voluptatem voluptatibus labore quam nihil.
+                                Quasi occaecati quos ratione quia aut
+                                molestiae velit et. Voluptatem id ea dicta
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- info links section -->
+    <section class="info-links">
+        <div class="container">
+            <div class="info-links-inner">
+                <h3 class="second-title">For more information click the following links below</h3>
+
+                <div class="d-flex bottom-info">
+                    <div class="info-links-inner-img">
+                        <img src="./assets/images/book_icon.png" alt="">
+                    </div>
+                    <div class="info-links-inner-link">
+                        <ul>
+                            <li>
+                                <a href="" class="d-flex">Information about school closing procedure</a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex">Check out the New Harper Woods College and Career Institute
+                                    Click for more info!!</a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex">2020 - 2021 Student Code of Conduct Handbook</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dolor section -->
+    <section class="Dolar">
+        <div class="container">
+            <div class="dolor-inner">
+                <div class="dolor-inner-info">
+                    <h2 class="second-title">Lorem Ipsum Dolar</h2>
+                    <p>Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine
+                        <br> causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.
+                    </p>
+                </div>
+                <div class="dolor-inner-card d-flex">
+                    <div class="dolocard">
+
+                        <svg viewBox="0 0 36 36" class="circle-svg">
+
+                            <path class="around" stroke-dasharray="100, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <path class="percent" stroke-dasharray="30, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <text x="18" y="14" text-anchor="middle" dy="7" font-size="20">3/10</text>
+
+                        </svg>
+
+                        <h4>LOREM IPSUM</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                        </p>
+
+                    </div>
+                    <div class="dolocard">
+                        <svg viewBox="0 0 36 36" class="circle-svg">
+
+                            <path class="around" stroke-dasharray="100, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <path class="percent" stroke-dasharray="30, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <text x="18" y="14" text-anchor="middle" dy="7" font-size="20">3/10</text>
+
+                        </svg>
+                        <h4>LOREM IPSUM</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                        </p>
+
+                    </div>
+                    <div class="dolocard">
+                        <svg viewBox="0 0 36 36" class="circle-svg">
+
+                            <path class="around" stroke-dasharray="100, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <path class="percent" stroke-dasharray="30, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831">
+                            </path>
+
+                            <text x="18" y="14" text-anchor="middle" dy="7" font-size="20">3/10</text>
+
+                        </svg>
+                        <h4>LOREM IPSUM</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-inner d-flex text-white">
+                <div class="schooldis">
+
+                    <h4 class="text-white">HW SCHOOL DISTRICT</h4>
+                    <ul class="d-flex">
+                        <li>
+                            <a href="javascript:void(0)" class="text-white"><i class="fa-solid fa-location-dot"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="text-white">
+                                1500 Treat Ave, Suite 200
+                                <span class="d-flex"> San Francisco, CA 94110</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex">
+                        <li>
+
+                            <a href="javascript:void(0)" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                        <li>
+
+                            <a href="javascript:void(0)" class="text-white">demo@hwschool.com</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex">
+                        <li><a href="javascript:void(0)" class="text-white"><i class="fa-solid fa-phone"></i></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="text-white"> 586-217-2163 (Support)</a>
+                        </li>
+                    </ul>
+                    <h5 class="text-white">Follow us</h5>
+                    <div class="medialinks">
+                        <a href="javascript:void(0)" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:void(0)" class="text-white"> <i class="fa-brands fa-youtube"></i></a>
+                        <a href="javascript:void(0)" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-school">
+                    <h5 class="text-white">Schools</h5>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="text-white">Beacon Elementary</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">Tyrone Elementary</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">HW Middle School</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">Beacon Elementary</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">Harper Academy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white">District Info</h5>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="text-white">Home
+                            </a></li>
+                        <li><a href="javascript:void(0)" class="text-white"> Board of Education</a></li>
+
+                    </ul>
+                </div>
+                <div class="footermore">
+                    <h5>More</h5>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="text-white">Menu</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">Illuminate Education</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">MI Star Parents</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">MI Star Students</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">MI Star Teachers</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">MI Star Teachers</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">MI Star Teachers</a></li>
+                        <li><a href="javascript:void(0)" class="text-white">Atlas Rubicon Teachers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-listen">
+                    <div>
+                        <h3 class="text-white">Listen Now</h3>
+                        <img src="./assets/images/woods.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-white">Transparency Reporting</h3>
+                        <img src="./assets/images/earth.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-white">Listen Now</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- owl js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!-- js custom -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
